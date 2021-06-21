@@ -1,9 +1,5 @@
-# 
-# MODIFY get_data() AS YOU LIKE.
-# DO NOT SEND THIS FILE TO US
 import random
-random.seed(111)  #remove hash-sign to get randomization seed we will be using at evaluation
-#                    (if you fix the seed you get always the same probabilty choice sequence)
+random.seed(111)  
 def f(sayi,oran,M,N):
     mask=["masked","notmasked"]
     lst=[]
