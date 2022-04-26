@@ -1,0 +1,86 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[dvips]{graphicx}
+\usepackage{fancybox}
+\usepackage{verbatim}
+\usepackage{array}
+\usepackage{latexsym}
+\usepackage{alltt}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage{fitch}  % to use fitch
+\usepackage{float}
+\usepackage[hmargin=3cm,vmargin=5.0cm]{geometry}
+%\topmargin=0cm
+\topmargin=-2cm
+\addtolength{\textheight}{6.5cm}
+\addtolength{\textwidth}{2.0cm}
+%\setlength{\leftmargin}{-5cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+
+
+\begin{document}
+
+\section*{Student Information } 
+%Write your full name and id number between the colon and newline
+%Put one empty space character after colon and before newline
+Full Name :  Emre Geçit \\
+Id Number :  2521581 \\
+
+\section*{Q. 1}
+Assume that there exists some a such that $a < 1$.\\
+$a < 1\\
+a * a < a\\
+a\textsuperscript{2} < a$\\Since a is an element of positive integers, $a\textsuperscript{2}$ must also be an element of positive integers. Since, in the beginning we have assumed that a is the smallest positive integer, and we reached a positive integer that is smaller than a, we reached a contradiction. Therefore, there cannot be a positive integer that is smaller than 1. By the well-ordering property of the positive integers, we can conclude that 1 is the smallest positive integer.
+\section*{Q. 2}
+Proving S(m, 1):\\Basis step:\\S(1, 1):\\$x\textsubscript{1}=1$, There is one solution to this problem, $x\textsubscript{1}=1.\\f(1, 1) = \dfrac{1!}{1*1!} = 1$\\\\
+Induction: Assume that S(j, 1) holds.\\ for S(j+1, 1):\\
+$x\textsubscript{1}+...+x\textsubscript{j}+x\textsubscript{j+1} = 1$\\
+There are two different solutions to this problem:\\ $x\textsubscript{1}+...+x\textsubscript{j}=1, x\textsubscript{j+1}=0$ or $x\textsubscript{1}+...+x\textsubscript{j}=0, x\textsubscript{j+1}=1$\\ $x\textsubscript{1}+...+x\textsubscript{j}=1$ has f(j, 1) = $\dfrac{j!}{(j-1)!} = j$ solutions (by the assumption).\\ At the end, the equation $x\textsubscript{1}+...+x\textsubscript{j}+x\textsubscript{j+1} = 1$ has j+1 solutions.\\ f(j+1, 1) = $\dfrac{(j+1)!}{j!} = j+1$ holds.\\
+Conclusion:\\
+S(m, 1) proved using induction.\\\\Proving S(1, n):\\$x\textsubscript{1}=j$\\This kind of an equation always has one solution (independent of j).\\ f(1, j) = $\dfrac{j!}{j!*0!}$ = 1.
+\\ S(m, 1) proved.\\\\
+Proving $f(m+1,n+1)=f(m+1,n)+f(m,n+1)$:\\
+S(m+1, n+1) states that $x\textsubscript{1}+...+x\textsubscript{m}+x\textsubscript{m+1}=n+1\\\\
+x\textsubscript{m+1}==0 \rightarrow x\textsubscript{1}+...+x\textsubscript{m}=n$ (f(m,n) different solutions)\\$x\textsubscript{m+1}==1 \rightarrow x\textsubscript{1}+...+x\textsubscript{m}=n-1$ (f(m,n-1) different solutions)\\......\\$x\textsubscript{m+1}==n \rightarrow x\textsubscript{1}+...+x\textsubscript{m}=0$ (1 solution)\\\\
+In total there are $\sum_{n=1} ^{n} f(m, i) + 1$ solutions.\\\\
+f(m+1, n+1) = $\sum_{i=1} ^{n} f(m, i) + 1\\=f(m,n)+\sum_{i=1} ^{n-1} f(m, i)+1\\=f(m,n)+f(m+1, n-1)$\\\\Conclusion:\\$f(m+1,n+1)=f(m+1,n)+f(m,n+1)$ proved.\\Proving $f(m+1, n+1) = \dfrac{(n+m)!}{(n+1)!m!}$:\\\\
+Basis step:\\
+S(m,1) proved before.\\
+S(1,n) proved before.\\\\
+Induction:\\
+Assume that S(j+1,k) and S(j,k+1) holds.\\\\
+Then:\\$
+f(j+1, k) = \dfrac{(j+k)!}{k!*j!}\\\\
+f(j, k+1) = \dfrac{(j+k)!}{(k+1)!*(j-1)!}\\\\
+f(j+1, k+1) = f(j+1, k) + f(j, k+1)\\\\
+= \dfrac{(j+k)!}{k!*j!} + \dfrac{(j+k)!}{(k+1)!*(j-1)!}\\\\
+= \dfrac{(k+1)*(j+k)!}{(k+1)!*j!} + \dfrac{j*(j+k)!}{(k+1)!*j!}\\\\
+= \dfrac{(k+1+j)*(j+k)!}{(k+1)!*j!}\\\\
+= \dfrac{(k+1+j)!}{(k+1)!*j!}\\\\
+$
+Conclusion:
+If S(j+1,k) and S(j,k+1) are true, then S(j+1,k+1) is also true. Since the base cases are also true, we can conclude S(m,n) by induction.
+
+\section*{Q. 3}
+a.\\\\
+There can be 4 orientation for a triangle based on the orientation of its hypotenuse.\\For the up-right oriented triangle, there can be 1+2+3+4+5+6+7 = 7*(7+1)/2 = 28 triangles.\\For the up-left oriented triangle there can be 1+2+3+4+5+6 = 6*(6+1) = 21 triangles.\\For the down-left oriented triangle there can be 1+2+3+4+5+6 = 6*(6+1) = 21 triangles.\\For the down-right oriented triangle there can be 1+2+3+4+5+6 = 6*(6+1) = 21 triangles.\\
+Answer: 21+21+21+28 = 91\\\\b.\\At least one value in the image should be mapped by more than one values in the domain. There are two possibilities:\\1) A value in the image will be mapped by three values, and the rest will be one-to-one (3, 1, 1, 1).\\2) 2 different values in the image will be mapped by two values, and the rest will be one-to-one (2, 2, 1, 1).\\\\ The number of occurences of the possibility 1 is: C(6, 3)*C(3, 1)*C(2, 1)*C(1, 1)*4 = 480.\\ The number of occurences of the possibility 2 is: C(6, 2)*C(4, 2)*C(2, 1)*C(1, 1)*6 = 1080.\\Total sum: 1080 + 480 = 1560
+
+\section*{Q. 4}
+a.
+For any string of length n, $n>1$, if the first n-1 character constitutes a valid string, there are 3 possible states that the last character can take. If, first n-1 character does not constitute a valid string, then there is only one state that the last character can take. Therefore,\\
+$a\textsubscript{n} = 2a\textsubscript{n-1} + 3\textsuperscript{n-1}$\\\\b.\\$a\textsubscript{1} = 0$\\\\c.\\Homogenous solution:\\$a\textsubscript{n}-2a\textsubscript{n-1}=0$\\\\Characteristic equation:\\$r-2=0\\r=2\\a\textsubscript{n}\textsuperscript{h}=A*2\textsuperscript{n}$\\\\Particular solution:\\
+$a\textsubscript{n}=A*3\textsuperscript{n}\\A*3\textsuperscript{n}=2A*3\textsuperscript{n-1}+3\textsuperscript{n-1}\\3*A*3\textsuperscript{n-1}=2A*3\textsuperscript{n-1}+3\textsuperscript{n-1}\\A*3\textsuperscript{n-1}=3\textsuperscript{n-1}\\A=1\\a\textsubscript{n}\textsuperscript{h}=3\textsuperscript{n}$\\\\
+General Solution:\\
+$a\textsubscript{n}=a\textsubscript{n}\textsuperscript{h}+a\textsubscript{n}\textsuperscript{p}=A*2\textsuperscript{n}+3\textsuperscript{n}\\
+a\textsubscript{1}=A*2\textsuperscript{1}+3\textsuperscript{1}=0\\
+A=-3/2\\
+a\textsubscript{n}=-3*2\textsuperscript{n-1}+3\textsuperscript{n}$
+
+\end{document}

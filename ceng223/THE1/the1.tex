@@ -1,0 +1,146 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[dvips]{graphicx}
+\usepackage{fancybox}
+\usepackage{verbatim}
+\usepackage{array}
+\usepackage{latexsym}
+\usepackage{alltt}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage{fitch}  % to use fitch
+\usepackage{float}
+\usepackage[hmargin=3cm,vmargin=5.0cm]{geometry}
+%\topmargin=0cm
+\topmargin=-2cm
+\addtolength{\textheight}{6.5cm}
+\addtolength{\textwidth}{2.0cm}
+%\setlength{\leftmargin}{-5cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+
+
+\begin{document}
+
+\section*{Student Information } 
+%Write your full name and id number between the colon and newline
+%Put one empty space character after colon and before newline
+Full Name :  Emre Geçit\newline
+Id Number :  2521581
+
+% Write your answers below the section tags
+\section*{Q. 1}
+\begin{center}
+\begin{fitchproof}
+\fitchline{$\neg(p \wedge q) \leftrightarrow (\neg q \rightarrow p)$}{}
+\fitchline{$(\neg(p \wedge q) \wedge (\neg q \rightarrow p)) \lor ((p \wedge q) \wedge \neg(\neg q \rightarrow p))$}{Logical equivalency}
+\fitchline{$(\neg (p \wedge q) \wedge (q \lor p)) \lor ((p \wedge q) \wedge \neg (q \lor p))
+$}{Lemma implication}
+\fitchline{$(\neg (p \wedge q) \wedge (q \lor p)) \lor ((p \wedge q) \wedge (\neg q \wedge \neg p))$}{De Morgan's law}
+\fitchline{$((\neg p \lor \neg q) \wedge (q \lor p)) \lor (p \wedge q \wedge \neg q \wedge \neg p)$}{Associative law}
+\fitchline{$((\neg p \lor \neg q) \wedge (q \lor p)) \lor F$}{Negation law}
+\fitchline{$((\neg p \lor \neg q) \wedge (q \lor p))$}{Negation law}
+\fitchline{$((\neg p \lor \neg q) \wedge (p \lor q)))$}{Commutative law}
+\fitchline{$((p \lor q) \wedge (\neg p \lor \neg q))$}{Commutative law}
+\end{fitchproof}
+\end{center}
+\noindent
+\newline
+
+\section*{Q. 2}
+a. $\forall x \forall y \forall z \forall t (E(x,y) \wedge E(z,y) \wedge (x \neq y)) \rightarrow \neg (I(x,t) \wedge I(z,t))$\newline
+b. $\exists x\forall y\forall z (I(x, y) \wedge S(x, z) \rightarrow (x=z)) $\newline
+c. Let m denote the Medicine Faculty.\newline
+$\forall j \forall x1 \forall x2 \forall x3 (J(j, m) \wedge  A(x1, j) \wedge A(x2, j) \wedge A(x3, j) \rightarrow ((x1=x2) \lor (x2=x3) \lor (x1=x3)))$
+
+\newpage
+\section*{Q. 3}
+a.
+\begin{center}
+\begin{fitchproof}
+\fitchline{$p \lor \neg q$}{Premise}
+\fitchline{$p \lor r$}{Premise}
+\subproof{
+\fitchline{$r \rightarrow q$}{Assumption}
+\subproof{
+\fitchline{$p$}{Assumption}
+}
+\subproof{
+\fitchline{$r$}{Assumption}
+\fitchline{$q$}{$\rightarrow$ e 3, 5}
+\subproof{
+\fitchline{$\neg q$}{Assumption}
+\fitchline{$\bot$}{$\neg e$ 6, 7}
+\fitchline{$p$}{$\bot$ e 8}
+}
+\subproof{
+\fitchline{$p$}{Assumption}
+}
+\fitchline{$p$}{$\lor e$ 1, 7-9, 10}
+}
+\fitchline{$p$}{$\lor e$ 2, 4, 5-11}
+}
+\fitchline{$(r \rightarrow q) \rightarrow p$}{$\rightarrow$i 3-12}
+\end{fitchproof}
+\end{center}
+b.
+\begin{center}
+\begin{fitchproof}
+\subproof{
+\fitchline{$(q \rightarrow p) \rightarrow q$}{Assumption}
+\fitchline{$q \lor \neg q$}{LEM}
+\subproof{
+\fitchline{$q$}{Assumption}
+}
+\subproof{
+\fitchline{$\neg q$}{Assumption}
+\subproof{
+\fitchline{$q$}{Assumption}
+\fitchline{$\bot$}{$\neg e$ 4, 5}
+\fitchline{$p$}{$\neg e$ 6}
+}
+\fitchline{$q \rightarrow p$}{$\rightarrow e$ 5-7}
+\fitchline{$q$}{$\rightarrow e$ 1, 8}
+}
+\fitchline{$q$}{$\lor e$ 2, 3-4, 5-10}
+}
+\end{fitchproof}
+\end{center}
+\noindent
+\newpage
+\section*{Q. 4}
+a.
+\begin{center}
+\begin{fitchproof}
+\fitchline{$\neg(\forall x(P(x) \rightarrow Q(x)))$}{Premise}
+\subproof{
+\fitchline{$\neg \exists x(P(x) \wedge \neg Q(x))$}{Assumption}
+\subproof{
+\fitchline{$P(x0) \wedge \neg Q(x0)$}{Assumption}
+\fitchline{$\exists(P(x) \wedge \neg Q(x))$}{$\exists$ i 3}
+\fitchline{$\bot$}{$\neg e$ 2, 4}
+}
+\fitchline{$\neg(P(x0) \wedge \neg Q(x0))$}{$\neg$e 3-5}
+\subproof{
+\fitchline{$P(x0)$}{Assumption}
+\subproof{
+\fitchline{$\neg Q(x0)$}{Assumption}
+\fitchline{$P(x0) \wedge \neg Q(x0)$}{$\wedge$ i 7, 8}
+\fitchline{$\bot$}{$\neg$ e 6, 9}
+}
+\fitchline{$\neg \neg Q(x0)$}{$\neg$ i 8-10}
+}
+\fitchline{$P(x0) \rightarrow Q(x0)$}{$\rightarrow$ i 7-11}
+\fitchline{$\forall x(P(x) \rightarrow Q(x))$}{$\forall$ i 2-12}
+\fitchline{$\bot$}{$\neg$ i 1, 13}
+}
+\fitchline{$\exists x(P(x) \wedge \neg Q(x))$}{$\neg$ e 2-14}
+
+\end{fitchproof}
+\end{center}
+
+\end{document}
