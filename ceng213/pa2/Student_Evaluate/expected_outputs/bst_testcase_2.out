@@ -1,0 +1,9 @@
+-> Creating a binary search tree with default constructor.
+-> Getting the root node.
+no root node
+-> Checking if the tree is empty or not.
+tree is empty
+-> Printing the tree.
+BST_inorder{}
+BST_preorder{}
+BST_postorder{}

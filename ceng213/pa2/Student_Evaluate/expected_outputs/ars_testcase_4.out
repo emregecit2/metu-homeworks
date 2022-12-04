@@ -1,0 +1,61 @@
+-> Creating an airline reservation system instance with default constructor.
+-> Making some passenger insertions to the system.
+-> Making some flight insertions to the system.
+-> Printing the system.
+# Printing the airline reservation system ...
+# Passengers:
+BST_inorder{
+	Passenger(firstname: harry, lastname: isabella),
+	Passenger(firstname: leo, lastname: ivy),
+	Passenger(firstname: oscar, lastname: lily),
+	Passenger(firstname: archie, lastname: rosie),
+	Passenger(firstname: jack, lastname: sophia),
+	Passenger(firstname: kate, lastname: sophia)
+}
+# Flights:
+BST_inorder{
+	Flight(flightCode: DS7030, departureTime: 20/12/2021 11:00, arrivalTime: 20/12/2021 12:30, departureCity: Ankara, arrivalCity: Brussels, economyCapacity: 200, businessCapacity: 10, completed: no, tickets: []),
+	Flight(flightCode: DS7040, departureTime: 20/12/2021 13:00, arrivalTime: 20/12/2021 14:30, departureCity: Ankara, arrivalCity: London, economyCapacity: 200, businessCapacity: 10, completed: no, tickets: []),
+	Flight(flightCode: DS7050, departureTime: 20/12/2021 10:00, arrivalTime: 20/12/2021 11:30, departureCity: Ankara, arrivalCity: Istanbul, economyCapacity: 200, businessCapacity: 10, completed: no, tickets: []),
+	Flight(flightCode: DS7060, departureTime: 20/12/2021 14:00, arrivalTime: 20/12/2021 15:30, departureCity: Ankara, arrivalCity: Rome, economyCapacity: 200, businessCapacity: 10, completed: no, tickets: []),
+	Flight(flightCode: DS7070, departureTime: 20/12/2021 12:00, arrivalTime: 20/12/2021 13:30, departureCity: Ankara, arrivalCity: Amsterdam, economyCapacity: 200, businessCapacity: 10, completed: no, tickets: [])
+}
+# Free ticket requests:
+Queue{}
+# Printing is done.
+-> Searching passenger with name jack sophia.
+exists. name must be jack sophia. it is jack sophia.
+-> Searching passenger with name archie rosie.
+exists. name must be archie rosie. it is archie rosie.
+-> Searching passenger with name harry isabella.
+exists. name must be harry isabella. it is harry isabella.
+-> Searching passenger with name oscar lily.
+exists. name must be oscar lily. it is oscar lily.
+-> Searching passenger with name leo ivy.
+exists. name must be leo ivy. it is leo ivy.
+-> Searching passenger with name kate sophia.
+exists. name must be kate sophia. it is kate sophia.
+-> Searching passenger with name john doe.
+no passenger with name john doe exists.
+-> Printing the system.
+# Printing the airline reservation system ...
+# Passengers:
+BST_inorder{
+	Passenger(firstname: harry, lastname: isabella),
+	Passenger(firstname: leo, lastname: ivy),
+	Passenger(firstname: oscar, lastname: lily),
+	Passenger(firstname: archie, lastname: rosie),
+	Passenger(firstname: jack, lastname: sophia),
+	Passenger(firstname: kate, lastname: sophia)
+}
+# Flights:
+BST_inorder{
+	Flight(flightCode: DS7030, departureTime: 20/12/2021 11:00, arrivalTime: 20/12/2021 12:30, departureCity: Ankara, arrivalCity: Brussels, economyCapacity: 200, businessCapacity: 10, completed: no, tickets: []),
+	Flight(flightCode: DS7040, departureTime: 20/12/2021 13:00, arrivalTime: 20/12/2021 14:30, departureCity: Ankara, arrivalCity: London, economyCapacity: 200, businessCapacity: 10, completed: no, tickets: []),
+	Flight(flightCode: DS7050, departureTime: 20/12/2021 10:00, arrivalTime: 20/12/2021 11:30, departureCity: Ankara, arrivalCity: Istanbul, economyCapacity: 200, businessCapacity: 10, completed: no, tickets: []),
+	Flight(flightCode: DS7060, departureTime: 20/12/2021 14:00, arrivalTime: 20/12/2021 15:30, departureCity: Ankara, arrivalCity: Rome, economyCapacity: 200, businessCapacity: 10, completed: no, tickets: []),
+	Flight(flightCode: DS7070, departureTime: 20/12/2021 12:00, arrivalTime: 20/12/2021 13:30, departureCity: Ankara, arrivalCity: Amsterdam, economyCapacity: 200, businessCapacity: 10, completed: no, tickets: [])
+}
+# Free ticket requests:
+Queue{}
+# Printing is done.

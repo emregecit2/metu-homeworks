@@ -1,0 +1,66 @@
+-> Creating a binary search tree with default constructor.
+-> Making some insertions to the tree.
+-> Printing the tree.
+BST_inorder{
+	105,
+	106,
+	107,
+	110,
+	113,
+	114,
+	115
+}
+-> Searching node with data 104.
+no node with data 104 exists.
+-> Searching node with data 105.
+exists. data must be 105. it is 105.
+-> Searching node with data 106.
+exists. data must be 106. it is 106.
+-> Searching node with data 107.
+exists. data must be 107. it is 107.
+-> Searching node with data 108.
+no node with data 108 exists.
+-> Searching node with data 109.
+no node with data 109 exists.
+-> Searching node with data 110.
+exists. data must be 110. it is 110.
+-> Searching node with data 111.
+no node with data 111 exists.
+-> Searching node with data 112.
+no node with data 112 exists.
+-> Searching node with data 113.
+exists. data must be 113. it is 113.
+-> Searching node with data 114.
+exists. data must be 114. it is 114.
+-> Searching node with data 115.
+exists. data must be 115. it is 115.
+-> Searching node with data 116.
+no node with data 116 exists.
+-> Printing the tree.
+BST_inorder{
+	105,
+	106,
+	107,
+	110,
+	113,
+	114,
+	115
+}
+BST_preorder{
+	110,
+	105,
+	107,
+	106,
+	115,
+	113,
+	114
+}
+BST_postorder{
+	106,
+	107,
+	105,
+	114,
+	113,
+	115,
+	110
+}

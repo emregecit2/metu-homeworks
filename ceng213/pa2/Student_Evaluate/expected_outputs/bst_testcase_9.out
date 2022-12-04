@@ -1,0 +1,42 @@
+-> Creating a binary search tree with default constructor.
+-> Making some insertions to the tree.
+-> Printing the tree.
+BST_inorder{
+	105,
+	106,
+	107,
+	110,
+	113,
+	114,
+	115
+}
+-> Making some removals from the tree and printing it after each removal.
+-> remove(110) ...
+BST_inorder{
+	105,
+	106,
+	107,
+	113,
+	114,
+	115
+}
+BST_preorder{
+	113,
+	105,
+	107,
+	106,
+	115,
+	114
+}
+BST_postorder{
+	106,
+	107,
+	105,
+	114,
+	115,
+	113
+}
+-> removeAllNodes ...
+BST_inorder{}
+BST_preorder{}
+BST_postorder{}

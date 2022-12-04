@@ -1,0 +1,12 @@
+-> Creating a binary search tree with default constructor.
+-> Inserting a node with data 104 to the tree.
+-> Printing the tree.
+BST_inorder{
+	104
+}
+BST_preorder{
+	104
+}
+BST_postorder{
+	104
+}

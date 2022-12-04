@@ -1,0 +1,61 @@
+-> Creating a binary search tree with default constructor.
+-> Making some insertions to the tree.
+-> Printing the tree.
+BST_inorder{
+	105,
+	106,
+	107,
+	110,
+	113,
+	114,
+	115
+}
+-> Removing the node with data 106, a node with no child in this testcase, from the tree.
+-> Printing the tree.
+BST_inorder{
+	105,
+	107,
+	110,
+	113,
+	114,
+	115
+}
+BST_preorder{
+	110,
+	105,
+	107,
+	115,
+	113,
+	114
+}
+BST_postorder{
+	107,
+	105,
+	114,
+	113,
+	115,
+	110
+}
+-> Removing the node with data 114, a node with no child in this testcase, from the tree.
+-> Printing the tree.
+BST_inorder{
+	105,
+	107,
+	110,
+	113,
+	115
+}
+BST_preorder{
+	110,
+	105,
+	107,
+	115,
+	113
+}
+BST_postorder{
+	107,
+	105,
+	113,
+	115,
+	110
+}

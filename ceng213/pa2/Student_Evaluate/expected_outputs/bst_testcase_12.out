@@ -1,0 +1,53 @@
+-> Creating a binary search tree with default constructor.
+-> Making some insertions to the tree.
+-> Printing the tree.
+BST_inorder{
+	105,
+	106,
+	107,
+	110,
+	113,
+	114,
+	115
+}
+-> Creating a duplicate tree with copy constructor.
+-> Printing the duplicate tree.
+BST_inorder{
+	105,
+	106,
+	107,
+	110,
+	113,
+	114,
+	115
+}
+-> Printing the tree.
+BST_inorder{
+	105,
+	106,
+	107,
+	110,
+	113,
+	114,
+	115
+}
+-> Removing a node from the original tree.
+-> Printing the duplicate tree.
+BST_inorder{
+	105,
+	106,
+	107,
+	110,
+	113,
+	114,
+	115
+}
+-> Printing the tree.
+BST_inorder{
+	105,
+	106,
+	107,
+	113,
+	114,
+	115
+}

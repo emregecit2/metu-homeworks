@@ -1,0 +1,18 @@
+-> Creating an airline reservation system instance with default constructor.
+-> Making some passenger insertions to the system.
+-> Printing the system.
+# Printing the airline reservation system ...
+# Passengers:
+BST_inorder{
+	Passenger(firstname: harry, lastname: isabella),
+	Passenger(firstname: leo, lastname: ivy),
+	Passenger(firstname: oscar, lastname: lily),
+	Passenger(firstname: archie, lastname: rosie),
+	Passenger(firstname: jack, lastname: sophia),
+	Passenger(firstname: kate, lastname: sophia)
+}
+# Flights:
+BST_inorder{}
+# Free ticket requests:
+Queue{}
+# Printing is done.

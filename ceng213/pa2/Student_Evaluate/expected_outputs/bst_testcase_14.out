@@ -1,0 +1,86 @@
+-> Creating a binary search tree with default constructor.
+-> Making some insertions to the tree.
+-> Printing the tree.
+BST_inorder{
+	105,
+	106,
+	107,
+	110,
+	113,
+	114,
+	115
+}
+BST_preorder{
+	110,
+	105,
+	107,
+	106,
+	115,
+	113,
+	114
+}
+BST_postorder{
+	106,
+	107,
+	105,
+	114,
+	113,
+	115,
+	110
+}
+-> Getting the successor nodes of the node with data 105.
+inorder successor node exists. data is 106.
+preorder successor node exists. data is 107.
+postorder successor node exists. data is 114.
+-> Getting the successor nodes of the node with data 106.
+inorder successor node exists. data is 107.
+preorder successor node exists. data is 115.
+postorder successor node exists. data is 107.
+-> Getting the successor nodes of the node with data 107.
+inorder successor node exists. data is 110.
+preorder successor node exists. data is 106.
+postorder successor node exists. data is 105.
+-> Getting the successor nodes of the node with data 110.
+inorder successor node exists. data is 113.
+preorder successor node exists. data is 105.
+no postorder successor node exists.
+-> Getting the successor nodes of the node with data 113.
+inorder successor node exists. data is 114.
+preorder successor node exists. data is 114.
+postorder successor node exists. data is 115.
+-> Getting the successor nodes of the node with data 114.
+inorder successor node exists. data is 115.
+no preorder successor node exists.
+postorder successor node exists. data is 113.
+-> Getting the successor nodes of the node with data 115.
+no inorder successor node exists.
+preorder successor node exists. data is 113.
+postorder successor node exists. data is 110.
+-> Printing the tree.
+BST_inorder{
+	105,
+	106,
+	107,
+	110,
+	113,
+	114,
+	115
+}
+BST_preorder{
+	110,
+	105,
+	107,
+	106,
+	115,
+	113,
+	114
+}
+BST_postorder{
+	106,
+	107,
+	105,
+	114,
+	113,
+	115,
+	110
+}

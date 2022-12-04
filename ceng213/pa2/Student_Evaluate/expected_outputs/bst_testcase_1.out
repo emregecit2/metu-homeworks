@@ -1,0 +1,5 @@
+-> Creating a binary search tree with default constructor.
+-> Printing the tree.
+BST_inorder{}
+BST_preorder{}
+BST_postorder{}
